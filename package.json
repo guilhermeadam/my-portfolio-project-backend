@@ -1,0 +1,27 @@
+{
+  "name": "my-portfolio-project-backend",
+  "version": "1.0.0",
+  "description": "Backend da minha aplicacao de portfolio pessoal.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilhermeadam/my-portfolio-project-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilhermeadam/my-portfolio-project-backend/issues"
+  },
+  "homepage": "https://github.com/guilhermeadam/my-portfolio-project-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

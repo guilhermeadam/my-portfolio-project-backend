@@ -1,10 +1,10 @@
 exports.up = function (knex) {
   return knex.schema.createTable("NOTES_USER", function (table) {
-    table.string('CODINTUSER');
-    table.increments('CODINTNOTE').primary();
-    table.string("SUBJECT");
-    table.string("DESCRIPTION");
-    table.timestamp("CREATEDAT").defaultTo(knex.fn.now());
+    table.string('codintuser');
+    table.increments('codintnote').primary();
+    table.string("subject");
+    table.string("description");
+    table.timestamp("create_at").defaultTo(knex.fn.now());
   });
 };
 

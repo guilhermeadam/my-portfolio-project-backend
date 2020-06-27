@@ -2,12 +2,18 @@ const connection = require("../database/connection");
 
 module.exports = {
   async index(request, response) {
-    const CODINTUSER = request.headers.authorization;
+    const codintuser = request.headers.authorization;
 
     const notes = await connection("NOTES_USER")
-      .where({ CODINTUSER: CODINTUSER })
-      .select("CODINTUSER","CODINTNOTE", "SUBJECT", "DESCRIPTION", "CREATEDAT");
+      .where({codintuser: codintuser })
+      .select(
+        "codintuser",
+        "codintnote",
+        "subject",
+        "description",
+        "create_at");
 
       response.send(notes);
+      console.log(notes)
   },
 };
